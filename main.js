@@ -53,10 +53,9 @@
 // }
 // someFunc([obj,obj1]);
 
-
 // --------------------------------------------------------------------------
-// לולאת FOR OF 
-//HTMLכל פנייה לדוקומנט שמחזירה לי אוסף של אלמנטים תחזיר לי אוסף של 
+// לולאת FOR OF
+//HTMLכל פנייה לדוקומנט שמחזירה לי אוסף של אלמנטים תחזיר לי אוסף של
 // -----------------------------------------------------------------------
 // const colors12 = ["red", "green", "blue", "black"];
 
@@ -64,13 +63,10 @@
 //   console.log(colorItems);
 // }
 
-
-
 // const mySpan = document.getElementsByClassName("span1");
 // for (const spanItem of mySpan) {
 //   console.log(spanItem);
 // }
-
 
 // function changeText(){
 // let clickMe = document.getElementsByClassName("myP");
@@ -97,42 +93,46 @@
 // }
 // someFunction();
 
-
-
-3.
-4.
-function printTheKey(){
-  const myself = {
-    firstName: "lior",
-    lastName: "dawit",
-    age: 34,
-    city:"kiryat-malachi"
-  };
-  for(let myItem in myself){
-    console.log(myItem);
-    console.log(myself[myItem]);
-  }
-}
-printTheKey();
-  let input = document.createElement("input");
-  input.type = "number";
-
-5.
-function creatObjectAndPrint(){
-
-  document.body.append("input");
+// 3;
+// 4;
+// function printTheKey() {
+//   const myself = {
+//     firstName: "lior",
+//     lastName: "dawit",
+//     age: 34,
+//     city: "kiryat-malachi",
+//   };
+//   for (let myItem in myself) {
+//     console.log(myItem);
+//     console.log(myself[myItem]);
+//   }
+// }
+// printTheKey();
   const myObject = {
-    firstName: prompt(),
-    lastName: prompt(),
-    age:prompt()
+    firstName: "",
+    lastName: "",
+    age: "",
   };
-  for(let myKey in myObject){
-    document.body.innerHTML += `<div>${myKey} : ${myObject[myKey]}</div>`
+
+let input = document.createElement("input");
+// input.id = "userInput"
+document.body.append(input);
+let someBtn = document.createElement("button");
+document.body.append(someBtn);
+someBtn.innerText = "send";
+someBtn.onclick = ()=> {
+  createObjectAndPrint();
+};
+function createObjectAndPrint() {
+  // let userInput = document.getElementById("userInput")
+  // myObject[mykey] = userInput.value;
+
+  for (let myKey in myObject) {
+    
+      document.body.innerHTML += `<div>${myKey} : ${input.value}</div>`;
   }
 }
-creatObjectAndPrint();
 
-6.
+// createObjectAndPrint();
 
-
-
+6;
