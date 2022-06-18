@@ -14,100 +14,103 @@
 // ------------------------------------------------
 //NOT TRUE
 
-// const user_obj = {
-//   age: 12,
-//   firstName: "lior",
-//   lastName: "dawit",
-// };
-// function printNameAndAge(user_obj) {
-//     user_obj.forEach((objItem) => {
-//       if (user_obj.age < 18){
-//         id_h1.innerHTML = objItem
-//       }
-//     });
-// }
-// printNameAndAge();
+const user_obj = {
+  age: 12,
+  firstName: "lior",
+  lastName: "dawit",
+};
+function printNameAndAge(user_obj) {
+    user_obj.forEach((objItem) => {
+      if (user_obj.age < 18){
+        id_h1.innerHTML = objItem
+      }
+    });
+}
+printNameAndAge();
 // -------------------------------------------------
 
 //TRUE
-// function someFunc(usersArray) {
-//   usersArray.forEach((user) => {
-//     if (user.age>18) {
-//       log(user.firstName);
-//     }
-//     else{
-//       console.log(user.lastName);
-//     }
-//   });
-//   let obj = {
-//     age:18,
-//     firstName:"lior",
-//     lastName:"dawit"
-//   }
-//   let obj1 = {
-//     age:18,
-//     firstName:"lior",
-//     lastName:"dawit"
-//   }
+function someFunc(usersArray) {
+  usersArray.forEach((user) => {
+    if (user.age>18) {
+      log(user.firstName);
+    }
+    else{
+      console.log(user.lastName);
+    }
+  });
+  let obj = {
+    age:18,
+    firstName:"lior",
+    lastName:"dawit"
+  }
+  let obj1 = {
+    age:18,
+    firstName:"lior",
+    lastName:"dawit"
+  }
 
-// }
-// someFunc([obj,obj1]);
+}
+someFunc([obj,obj1]);
 
 // --------------------------------------------------------------------------
 // לולאת FOR OF
 //HTMLכל פנייה לדוקומנט שמחזירה לי אוסף של אלמנטים תחזיר לי אוסף של
 // -----------------------------------------------------------------------
-// const colors12 = ["red", "green", "blue", "black"];
+const colors12 = ["red", "green", "blue", "black"];
 
-// for (let colorItems of colors12) {
-//   console.log(colorItems);
-// }
+for (let colorItems of colors12) {
+  console.log(colorItems);
+}
 
-// const mySpan = document.getElementsByClassName("span1");
-// for (const spanItem of mySpan) {
-//   console.log(spanItem);
-// }
+const mySpan = document.getElementsByClassName("span1");
+for (const spanItem of mySpan) {
+  console.log(spanItem);
+}
 
-// function changeText(){
-// let clickMe = document.getElementsByClassName("myP");
-// for (const items of clickMe ) {
-// items.innerHTML = "<h1>"+"hello"+"</h1>";
-// items.style.color = "blue";
-// }
-// }
+function changeText(){
+let clickMe = document.getElementsByClassName("myP");
+for (const items of clickMe ) {
+items.innerHTML = "<h1>"+"hello"+"</h1>";
+items.style.color = "blue";
+}
+}
 //-------------------------------------------------------------------------
 //------------------------------------------------------------------------
 // לולאה שרצה פר שדה(KEY) באובייקט for in לולאת
 
-// function someFunction(){
-//   const person = {
-//     firstName:"lior",
-//     lastName:"dawit",
-//     age:34
-// }
-// for(let some_key in person){
-//   console.log(some_key);
-//   console.log(person[some_key]);
-//   console.log(`${some_key} : ${person [some_key]}`);
-// }
-// }
-// someFunction();
+function someFunction(){
+  const person = {
+    firstName:"lior",
+    lastName:"dawit",
+    age:34
+}
+for(let some_key in person){
+  console.log(some_key);
+  console.log(person[some_key]);
+  console.log(`${some_key} : ${person [some_key]}`);
+}
+}
+someFunction();
 
 // 3;
 // 4;
-// function printTheKey() {
-//   const myself = {
-//     firstName: "lior",
-//     lastName: "dawit",
-//     age: 34,
-//     city: "kiryat-malachi",
-//   };
-//   for (let myItem in myself) {
-//     console.log(myItem);
-//     console.log(myself[myItem]);
-//   }
-// }
-// printTheKey();
+function printTheKey() {
+  const myself = {
+    firstName: "lior",
+    lastName: "dawit",
+    age: 34,
+    city: "kiryat-malachi",
+  };
+  for (let myItem in myself) {
+    console.log(myItem);
+    console.log(myself[myItem]);
+  }
+}
+printTheKey();
+
+
+
   const myObject = {
     firstName: "",
     lastName: "",
