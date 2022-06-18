@@ -133,6 +133,6 @@ function createObjectAndPrint() {
   }
 }
 
-// createObjectAndPrint();
+createObjectAndPrint();
 
 6;
