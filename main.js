@@ -13,28 +13,14 @@ colors1.forEach((item) => item.toUpperCase());
 // צרו פונקציה המקבלת כארגומנט מערך של אובייקטים ולכל אבוייקט יש גיל שם פרטי ושם משפחה
 // אם הגיל מעל 18 מדפיסה שם פרטי למסך אחרת מדפיסה שם משפחה למסך
 // ------------------------------------------------
-//NOT TRUE
 
-// const user_obj = {
-//   age: 12,
-//   firstName: "lior",
-//   lastName: "dawit",
-// };
-// function printNameAndAge(user_obj) {
-//     user_obj.forEach((objItem) => {
-//       if (user_obj.age < 18){
-//         id_h1.innerHTML = objItem
-//       }
-//     });
-// }
-// printNameAndAge();
 // -------------------------------------------------
 
 //TRUE
 function someFunc(usersArray) {
   usersArray.forEach((user) => {
     if (user.age > 18) {
-      log(user.firstName);
+      console.log(user.firstName);
     } else {
       console.log(user.lastName);
     }
@@ -136,4 +122,32 @@ function createObjectAndPrint() {
 
 createObjectAndPrint();
 
+`<tr id="id_${conter++}> </tr>`
+
+///בשביל ליצור 
+//ID 
+//דינאמי נשתמש בקאונטר 
 6;
+const userArray = [];
+function someFunc(){
+  const obj = {
+    firstName: ,
+    lastName: ,
+    age:+ ,
+    email:
+  }
+  userArray.push(obj);
+  firstName.value = " ";
+  lastName.value = " ";
+  age.value = " ";
+  printToTable(obj);
+}
+
+let counter = 0;
+function printToTable(user){
+  tableId.innerHTML += `<tr id="tr_${counter++} </tr>`>
+  for(const userKey in user){
+    document.getElementById("tr_${counter}").innerHTML +=
+    `<td>${user[userKey]}</td>`
+  }
+}
