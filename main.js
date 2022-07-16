@@ -40,11 +40,11 @@
 // לולאת FOR OF
 //HTMLכל פנייה לדוקומנט שמחזירה לי אוסף של אלמנטים תחזיר לי אוסף של
 // -----------------------------------------------------------------------
-const colors12 = ["red", "green", "blue"];
+// const colors12 = ["red", "green", "blue"];
 
-for (let colorItems of colors12) {
-  console.log(colorItems[0]);
-}
+// for (let colorItems of colors12) {
+//   console.log(colorItems[0]);
+// }
 
 // const mySpan = document.getElementsByClassName("span1");
 // for (const spanItem of mySpan) {
@@ -149,3 +149,21 @@ for (let colorItems of colors12) {
 //     `<td>${user[userKey]}</td>`
 //   }
 // }
+
+
+
+
+class Point{
+  constructor(x,y){
+    this.x = x;
+    this.y = y;
+  }
+  static dic(objectA, obectB){
+    const dx = objectA.x-obectB.x;
+    const dy = objectA.y - obectB.y;
+    return Math.hypot(dx,dy);
+  }
+}
+const p1 = new Point(7,2);
+const p2 = new Point(3, 8);
+console.log(Point.dic(p1,p2));
